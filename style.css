@@ -1,0 +1,230 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'poppins', sans-serif;
+}
+
+header {
+    background-image: url('images/image1.jpg');
+    background-size: cover;
+    background-position: center;
+    color: #000; /* Change font color to black */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    text-align: center;
+}
+
+header h1 {
+    font-size: 85px;
+    margin-top: 180px;
+    font-weight: bold; /* Make font bold */
+}
+
+header p {
+    font-size: 20px;
+    margin: 0.5rem 0;
+    font-weight: bold; /* Make font bold */
+}
+
+header a.cta {
+    background-color: #000; /* Change background color to black */
+    border: 1px solid #333;
+    color: #333; /* Change text color to dark gray */
+    padding: 1rem 2rem;
+    text-decoration: none;
+    border-radius: 60px;
+    margin-top: 1rem;
+    transition: all 0.2s;
+    font-weight: bold; /* Make font bold */
+}
+
+header a.cta:hover {
+    background-color: #333;
+    color: #fff; /* Keep hover text color white */
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 2rem;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    padding: 20px 7%;
+}
+
+nav img {
+    height: 40px;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav a {
+    color: #000; /* Change nav link color to black */
+    margin: 0 1rem;
+    text-decoration: none;
+    font-size: 1.2rem;
+    font-weight: bold; /* Make font bold */
+}
+
+main {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 3rem 0;
+}
+
+section {
+    width: 80%;
+    text-align: center;
+    margin: 2rem;
+}
+
+section h2 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    font-weight: bold; /* Make font bold */
+}
+
+section form {
+    max-width: 600px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 2rem;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+section input[type="text"],
+section input[type="email"],
+section textarea {
+    width: 100%;
+    padding: 1rem;
+    font-size: 1.1rem;
+    margin-bottom: 1rem;
+    border-bottom: 5px;
+    border: none;
+    outline: none;
+    background: #f2f2f2;
+}
+
+section button[type="Submit"] {
+    background-color: #00137e;
+    color: #fff; /* Keep submit button text color white */
+    padding: 1rem;
+    border: none;
+    border-radius: 40px;
+    cursor: pointer;
+    transition: all 0.2s;
+    width: 100%;
+    font-weight: bold; /* Make font bold */
+}
+
+footer {
+    background-color: #00137e;
+    color: #fff; /* Keep footer text color white */
+    display: flex;
+    justify-content: center;
+    padding: 1rem 0;
+    text-align: center;
+}
+
+footer p {
+    font-size: 1rem;
+    margin: 0;
+    font-weight: bold; /* Make font bold */
+}
+
+footer a {
+    color: #fff; /* Keep footer link color white */
+    margin-left: 1rem;
+    text-decoration: none;
+    font-weight: bold; /* Make font bold */
+}
+
+@media only screen and (max-width: 600px) {
+    header {
+        flex-direction: column;
+    }
+
+    nav {
+        flex-direction: column;
+    }
+    section {
+        width: 100%;
+    }
+}
+
+#services {
+    padding: 1rem 0;
+    text-align: center;
+}
+
+#services h2 {
+    margin-bottom: 5rem;
+    font-weight: bold; /* Make font bold */
+}
+
+.service {
+    width: 30%;
+    display: inline-block;
+    padding: 0 1rem;
+    text-align: center;
+}
+
+.service img {
+    width: 250px;
+    margin-bottom: 1rem;
+    border-radius: 50%;
+}
+
+.service h3 {
+    margin-bottom: 1rem;
+    font-weight: bold; /* Make font bold */
+}
+
+@media only screen and (max-width: 600px) {
+    .service {
+        width: 100%;
+        margin: 2rem 0;
+    }
+}
+
+#about {
+    line-height: 30px;
+    padding: 50px 8%;
+}
+
+#about img {
+    margin-top: 50px;
+}
+
+#Contact {
+    line-height: 30px;
+    padding: 50px 7%;
+    color: #008000; /* Change text color to green */
+}
+
+#Contact h2 {
+    margin-bottom: 2rem;
+    font-weight: bold; /* Make font bold */
+    color: #008000; /* Change header color to green */
+}
